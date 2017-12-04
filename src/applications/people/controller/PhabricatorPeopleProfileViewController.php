@@ -3,10 +3,6 @@
 final class PhabricatorPeopleProfileViewController
   extends PhabricatorPeopleProfileController {
 
-  public function shouldAllowPublic() {
-    return true;
-  }
-
   public function handleRequest(AphrontRequest $request) {
     $viewer = $this->getViewer();
     $username = $request->getURIData('username');
